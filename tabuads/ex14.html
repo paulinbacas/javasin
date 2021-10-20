@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MARCOS</title>
+   </head>
+  
+   <body>
+    <script language="javascript">
+    var aa;
+    var bb;
+    var cc;
+    var hipotenusa;
+    var catetoum;
+    var catetodois;
+
+    aa = parseFloat(window.prompt("Digite o lado 1:"));
+    bb = parseFloat(window.prompt("Digite o lado 2:"));
+    cc = parseFloat(window.prompt("Digite o lado 3:"));
+
+        hipotenusa = aa;
+        catetoum = bb;
+        catetodois = cc;
+    
+          if (bb>aa & bb > cc)
+          {
+            hipotenusa = bb;
+            catetoum = aa;
+          }
+
+           else if (cc > aa & cc > bb)
+          {
+            hipotenusa = cc;
+            catetodois = aa;
+          }
+
+          if ((hipotenusa * hipotenusa) == (catetoum * catetoum) + (catetodois * catetodois))
+         {
+              document.write("As medidas formam um triangulo retangulo");
+         }
+
+          else
+         {
+              document.write("As medidas não formam um triangulo retangulo");
+         }
+
+    </script>
+  </body>
+</html> 

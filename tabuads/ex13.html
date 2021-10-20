@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ex13</title>
+  </head>
+
+  <body>
+    <script language="javascript">
+    var a;
+    var b;
+    var c;
+
+    a = parseFloat(window.prompt("Digite o lado 1:"));
+    b = parseFloat(window.prompt("Digite o lado 2:"));
+    c = parseFloat(window.prompt("Digite o lado 3:"));
+
+        if ((a<b+c) & (b<a+c) & (c<a+b))
+          {
+            document.write("não é um triangulo!");
+          }
+
+         else
+            {
+
+              if((a!=b) & (a!=c) & (b!=c))
+
+               {
+                   document.write("isso é um triangulo escaleno.");
+               }
+
+              else if((a=b) & (a=c) & (b=c))
+
+              {
+                   document.write("isso é um triangulo equilatero.");
+              }
+              else
+
+               {
+                   document.write("isso é um triangulo isoceles");
+               }
+
+            }
+
+    </script>
+  </body>
+</html> 

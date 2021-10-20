@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ex12</title>
+  </head>
+  
+  <body>
+    <script language="javascript">
+    var peso;
+    var altura;
+    var RR;
+
+    peso = parseFloat(window.prompt("Digite seu peso: "));
+    altura = parseFloat(window.prompt("Digite sua altura: "));
+    RR = (peso * altura) / 2;
+
+    if (RR<20)
+    {
+        document.write("você está abaixo do peso!");
+    }
+
+    else if (RR>=25)
+    {
+        document.write("você está acima do peso!");
+    }
+
+    else
+    {
+        document.write("Seu peso é ideal!");
+    }
+
+    </script>
+   </body>
+   
+</html> 
